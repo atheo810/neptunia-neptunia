@@ -2,6 +2,8 @@
 	||-Config
 		|||-Database
 			||||-UserDatabase.php
+			||||-Queries		
+				|||||-Query.php
 		|||-UserConfig.php
 	||-Http
 		|||-Controllers
