@@ -1,0 +1,4 @@
+How To Run ? ->using bash "php nesa serve" whitout""
+neptunia folder including all configuration and mvc
+vendor are made by composer
+views folder are content of your website
