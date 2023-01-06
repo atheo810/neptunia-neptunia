@@ -1,16 +1,16 @@
 |neptunia
-|-Config
-	||-Database
-		|||-UserDatabase.php
-	||-UserConfig.php
-|-Http
-	||-Controllers
-		|||-Controller.php
-|-Models
-	||-Model.php
-|-Routes
+	||-Config
+		|||-Database
+			||||-UserDatabase.php
+		|||-UserConfig.php
+	||-Http
+		|||-Controllers
+			||||-Controller.php
+	||-Models
+		|||-Model.php
+|-routes
 	||-web.php
-|-Views
+|-views
 	||-Layout
 		|||-template.php
 	||-Page
