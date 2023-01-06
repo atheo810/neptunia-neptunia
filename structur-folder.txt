@@ -11,7 +11,12 @@
 |-Routes
 	||-web.php
 |-Views
-	||-home.php
+	||-Layout
+		|||-template.php
+	||-Page
+		|||-home.php
+	||-Component
+		|||-card.php
 |public
 |-index.php
 |-src
