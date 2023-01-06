@@ -1,17 +1,17 @@
 |neptunia
 |-Config
-||-Database
-|||-UserDatabase.php
-||-UserConfig.php
+	||-Database
+		|||-UserDatabase.php
+	||-UserConfig.php
 |-Http
-||-Controllers
-|||-Controller.php
+	||-Controllers
+		|||-Controller.php
 |-Models
-||-Model.php
+	||-Model.php
 |-Routes
-||-web.php
+	||-web.php
 |-Views
-||-home.php
+	||-home.php
 |public
 |-index.php
 |-src
