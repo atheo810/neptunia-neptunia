@@ -1,12 +1,11 @@
 <?php
 
-require "vendor/autoload.php";
-use Neptunia\Config\Database\UserDatabase;
+require "../vendor/autoload.php";
+use Neptunia\Config\Database\Queries\Query;
 
-$db = new UserDatabase();
-
-var_dump($db);
-
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
+// $db = new Query();
+// $db->selectAll("coba");
+// foreach ($db->selectAll("coba") as $data) {
+//     print_r($data);
+//     echo "<br>";
+// }

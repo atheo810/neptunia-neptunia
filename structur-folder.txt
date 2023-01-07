@@ -1,23 +1,23 @@
 |neptunia
-	||-Config
-		|||-Database
+	||-Config/
+		|||-Database/
 			||||-UserDatabase.php
-			||||-Queries		
+			||||-Queries/	
 				|||||-Query.php
 		|||-UserConfig.php
-	||-Http
-		|||-Controllers
+	||-Http/
+		|||-Controllers/
 			||||-Controller.php
-	||-Models
+	||-Models/
 		|||-Model.php
 |-routes
 	||-web.php
 |-views
-	||-Layout
+	||-Layout/
 		|||-template.php
-	||-Page
+	||-Page/
 		|||-home.php
-	||-Component
+	||-Component/
 		|||-card.php
 |public
 |-index.php
