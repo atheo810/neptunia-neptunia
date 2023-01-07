@@ -1,6 +1,6 @@
 <?php
 
-require "../vendor/autoload.php";
+require __DIR__.'/../vendor/autoload.php';
 use Neptunia\Config\Database\Queries\Query;
 
 $db = new Query();
