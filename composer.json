@@ -1,12 +1,13 @@
 {
     "name": "neptunia/nepnep",
     "description": "Neptunia framework",
-    "type": "library",
+    "type": "project",
     "license": "volenta",
     "autoload": {
         "psr-4": {
             "Neptunia\\": "neptunia/"
-        }
+        },
+        "classmap": ["neptunia"]
     },
     "authors": [
         {
@@ -19,6 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=8.1",
+        "symfony/console": "^6.2"
     }
 }
