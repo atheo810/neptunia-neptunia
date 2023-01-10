@@ -1,7 +1,0 @@
-#!/usr/in/php
-
-<?php
-require __DIR__.'/vendor/autoload.php';
-if ($argv[1] == "serve") {
-    exec("php -S localhost:8888 -t views/");
-}
