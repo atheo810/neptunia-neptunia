@@ -15,12 +15,11 @@
             "email": "atheos810@gmail.com"
         },
         {
-            "name": "atheo810",
+            "name": "AdiSan103",
             "email": "arwinsmith01@gmail.com"
         }
     ],
     "require": {
-        "php": ">=8.1",
-        "symfony/console": "^6.2"
+        "php": ">=8.1"
     }
 }
