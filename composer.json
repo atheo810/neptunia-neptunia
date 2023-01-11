@@ -1,12 +1,13 @@
 {
     "name": "neptunia/nepnep",
     "description": "Neptunia framework",
-    "type": "library",
+    "type": "project",
     "license": "volenta",
     "autoload": {
         "psr-4": {
             "Neptunia\\": "neptunia/"
-        }
+        },
+        "classmap": ["neptunia"]
     },
     "authors": [
         {
@@ -14,11 +15,11 @@
             "email": "atheos810@gmail.com"
         },
         {
-            "name": "atheo810",
+            "name": "AdiSan103",
             "email": "arwinsmith01@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=8.1"
     }
 }
