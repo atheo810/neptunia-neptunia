@@ -19,7 +19,9 @@
 		|||-home.php
 	||-Component/
 		|||-card.php
-|public
+|-public
+	||-index.php
+	||-.htaccess
 |-index.php
 |-src
 |vendor
