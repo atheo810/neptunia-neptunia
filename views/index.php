@@ -10,5 +10,4 @@
 //     echo "<br>";
 // }
 
-// echo "<pre>";
-// die(var_dump($_SERVER));
+echo "Berhasil";
