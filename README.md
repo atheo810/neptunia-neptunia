@@ -20,38 +20,34 @@ And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
 #
-
 ## Struktur Folder
-
-
-## Development
 |neptunia
-    ||-Config/
-        |||-Database/
-            ||||-UserDatabase.php
-            ||||-Queries/   
-                |||||-Query.php
-        |||-UserConfig.php
+    : ||-Config/
+        : |||-Database/
+            : ||||-UserDatabase.php
+              : ||||-Queries/   
+                : |||||-Query.php
+        : |||-UserConfig.php
         |||-Routes/
             ||||-web.php
-    ||-Http/
-        |||-Controllers/
-            ||||-Controller.php
-    ||-Models/
-        |||-Model.php
-|-routes
-    ||-web.php
-|-views
-    ||-Layout/
-        |||-template.php
-    ||-Page/
-        |||-home.php
-    ||-Component/
-        |||-card.php
-|-public
-    ||-index.php
+    : ||-Http/
+        : |||-Controllers/
+            : ||||-Controller.php
+    : ||-Models/
+        : |||-Model.php
+: |-routes
+    : ||-web.php
+: |-views
+    : ||-Layout/
+        : |||-template.php
+    : ||-Page/
+        : |||-home.php
+    : ||-Component/
+        : |||-card.php
+: |-public
+    : ||-index.php
     ||-.htaccess
-|-index.php
+: |-index.php
 |-src
 |vendor
 |.env
@@ -60,6 +56,7 @@ And of course Dillinger itself is open source with a [public repository][dill]
 |composer.lock
 |index.php
 |nesa
+## Development
 
 Want to contribute? Great!
 
