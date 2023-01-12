@@ -38,9 +38,13 @@ on GitHub.</p>
 </dd>
 </dl>
 </dd>
-<dd>|||-UserConfig.php<br>
-|||-Routes/<br>
-||||-web.php</dd>
+<dd>|||-UserConfig.php</dd>
+<dd>
+<dl>
+<dt>|||-Routes/</dt>
+<dd>||||-web.php</dd>
+</dl>
+</dd>
 </dl>
 </dd>
 <dd>
