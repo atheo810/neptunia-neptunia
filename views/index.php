@@ -182,7 +182,7 @@
 
                             <div class="card-description">
                                 <h3>DOCUMENTATION</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, iste.</p>
+                                <p>Documentasi ada di atheo810/neptunia-neptunia.</p>
                             </div>
                         </div>
                         <!-- card -->
