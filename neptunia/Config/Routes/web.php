@@ -63,7 +63,7 @@ class web
             }
 
             // mengatur parameter dengan nama parameter
-            $params[$paramKey[$key]] = $reqUri[$index];
+            $params[$paramkey[$key]] = $reqUri[$index];
 
             //ini untuk membuat regex yang di bandingkan dengan address
             $reqUri[$index] = "{.*}";
