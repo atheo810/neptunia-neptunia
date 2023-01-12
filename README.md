@@ -21,7 +21,45 @@ And of course Dillinger itself is open source with a [public repository][dill]
 
 #
 
+## Struktur Folder
+
+
 ## Development
+|neptunia
+    ||-Config/
+        |||-Database/
+            ||||-UserDatabase.php
+            ||||-Queries/   
+                |||||-Query.php
+        |||-UserConfig.php
+        |||-Routes/
+            ||||-web.php
+    ||-Http/
+        |||-Controllers/
+            ||||-Controller.php
+    ||-Models/
+        |||-Model.php
+|-routes
+    ||-web.php
+|-views
+    ||-Layout/
+        |||-template.php
+    ||-Page/
+        |||-home.php
+    ||-Component/
+        |||-card.php
+|-public
+    ||-index.php
+    ||-.htaccess
+|-index.php
+|-src
+|vendor
+|.env
+|.gitignore
+|composer.json
+|composer.lock
+|index.php
+|nesa
 
 Want to contribute? Great!
 
