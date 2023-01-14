@@ -7,7 +7,7 @@ namespace Neptunia\Config\Routes;
  */
 class web
 {
-    public function add($route, $file)
+    public static function add($route, $file)
     {
         // variable yang nanti nya menyimpan nilai
         $params = [];
@@ -20,7 +20,7 @@ class web
 
         // jika $route tidak ada memanggil parameter maka akan menjalankan simpleroute();
         if (empty($paramMatches[0])) {
-            $this->simpleroute($file, $route);
+            self::simpleroute($file, $route);
             return;
         }
 
@@ -84,7 +84,7 @@ class web
     }
 
 
-    private function simpleroute($file, $route)
+    private static function simpleroute($file, $route)
     {
         //mengganti slash pertama dan terakhir
         //$_SERVER["REQUEST_URI"] akan kosong jika request uri adalah /
@@ -102,7 +102,7 @@ class web
             exit();
         }
     }
-    public function notfound($file)
+    public static function notfound($file)
     {
         include "../views/" . $file;
     }

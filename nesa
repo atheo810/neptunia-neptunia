@@ -1,10 +1,6 @@
 #!/usr/bin/env php
 
 <?php
-require_once __DIR__.'/vendor/autoload.php';
-
-
-
 
 if ($argv[1] == "serve") {
     exec("php -S localhost:8888 -t public/");
