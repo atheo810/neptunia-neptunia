@@ -28,7 +28,7 @@ class web
         foreach ($paramMatches[0] as $key) {
             $paramkey[] = $key;
         }
-        //mengganti slashes pertaman dan terakhir
+        //mengganti slashes pertama dan terakhir
         //$_SERVER["REQUEST_URI"] akan kososng jika req uri is /
         if (!empty($_SERVER["REQUEST_URI"])) {
             $route = preg_replace("/(^\/)|(\/$)/", "", $route);
