@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43415d484d0959bd7c517ac2291f1bff",
+    "content-hash": "40bf06342a963a57905454f3804013df",
     "packages": [
         {
             "name": "nawasena/nawasena",
@@ -12,13 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atheo810/nawasena.git",
-                "reference": "6e1ec0624b1fcb449ee4df975c94ac8316408084"
+                "reference": "f4dd6847b559b8ea51b782afe3d55a2074ad63ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atheo810/nawasena/zipball/6e1ec0624b1fcb449ee4df975c94ac8316408084",
-                "reference": "6e1ec0624b1fcb449ee4df975c94ac8316408084",
+                "url": "https://api.github.com/repos/atheo810/nawasena/zipball/f4dd6847b559b8ea51b782afe3d55a2074ad63ae",
+                "reference": "f4dd6847b559b8ea51b782afe3d55a2074ad63ae",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
@@ -41,7 +44,7 @@
                 "issues": "https://github.com/atheo810/nawasena/issues",
                 "source": "https://github.com/atheo810/nawasena/tree/v1.0"
             },
-            "time": "2023-01-18T05:13:48+00:00"
+            "time": "2023-01-18T09:16:27+00:00"
         }
     ],
     "packages-dev": [],
