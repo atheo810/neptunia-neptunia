@@ -1,3 +1,5 @@
 <?php
 
-echo "inidia";
+// echo "inidia";
+
+echo $params['id'];

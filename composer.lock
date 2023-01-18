@@ -4,8 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "292cf67b74ac45b179555fb39af88961",
-    "packages": [],
+    "content-hash": "43415d484d0959bd7c517ac2291f1bff",
+    "packages": [
+        {
+            "name": "nawasena/nawasena",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atheo810/nawasena.git",
+                "reference": "6e1ec0624b1fcb449ee4df975c94ac8316408084"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atheo810/nawasena/zipball/6e1ec0624b1fcb449ee4df975c94ac8316408084",
+                "reference": "6e1ec0624b1fcb449ee4df975c94ac8316408084",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nawasena\\": "src/Nawasena/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "atheo810",
+                    "email": "atheos810@gmail.com"
+                }
+            ],
+            "description": "Library for PHP Frameworks",
+            "support": {
+                "issues": "https://github.com/atheo810/nawasena/issues",
+                "source": "https://github.com/atheo810/nawasena/tree/v1.0"
+            },
+            "time": "2023-01-18T05:13:48+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
