@@ -24,6 +24,6 @@
         "nawasena/nawasena": "1.0"
     },
     "config":{
-        "classmap-authoritative": true"
+        "optimize-autoloader": true
     }
 }
