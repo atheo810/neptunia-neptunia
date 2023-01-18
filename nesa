@@ -1,11 +1,22 @@
 #!/usr/bin/env php
 
 <?php
-require_once __DIR__.'/vendor/autoload.php';
+
+switch ($argv[1]) {
+    case 'serve':
+        echo "Untuk Mematikan Server tekan \e[33mCTRL + C\e[0m \n";
+        exec("php -S localhost:8888 -t public/");
+        break;
+
+    case "version" :
+        echo("nesa Version v0.0.1");
+        break;
+    case "time":
+        echo("waktu Sekarang : \e[32m" . date("H:i:s") . "\e[0m");
+        break;
 
 
-
-
-if ($argv[1] == "serve") {
-    exec("php -S localhost:8888 -t public/");
-}// ...
+    default:
+        echo "maaf kode tidak berjalan silahkan ketikan --help";
+        break;
+}
