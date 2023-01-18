@@ -2,7 +2,7 @@
     "name": "neptunia/neptunia",
     "description": "Neptunia framework",
     "type": "project",
-    "license": "volenta",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Neptunia\\": "neptunia/"
