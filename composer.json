@@ -21,6 +21,6 @@
     ],
     "require": {
         "php": ">=8.1",
-        "nawasena/nawasena": "^1.0"
+        "nawasena/nawasena": "1.0"
     }
 }
