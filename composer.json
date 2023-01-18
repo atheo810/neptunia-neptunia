@@ -1,5 +1,5 @@
 {
-    "name": "neptunia/nepnep",
+    "name": "neptunia/neptunia",
     "description": "Neptunia framework",
     "type": "project",
     "license": "MIT",
@@ -20,6 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.1",
+        "nawasena/nawasena": "^1.0"
     }
 }

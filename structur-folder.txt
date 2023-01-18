@@ -5,6 +5,8 @@
 			||||-Queries/	
 				|||||-Query.php
 		|||-UserConfig.php
+		|||-Routes/
+			||||-web.php
 	||-Http/
 		|||-Controllers/
 			||||-Controller.php
