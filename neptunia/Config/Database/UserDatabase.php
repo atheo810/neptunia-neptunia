@@ -9,6 +9,12 @@ class UserDatabase
 {
     public function __construct()
     {
-        return $connection = new \PDO('mysql:host=127.0.0.1;dbname=belajarsql', "root", "");
+        return $connection = new \PDO(
+            $_ENV['DB_CONNECTION'] .
+            ":host=" . $_ENV['DB_HOST'].
+            ";dbname=" . $_ENV['DB_DATABASE'],
+            $_ENV['DB_USERNAME'],
+            $_ENV['DB_PASSWORD']
+        );
     }
 }
