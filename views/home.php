@@ -2,4 +2,4 @@
 
 // echo "inidia";
 
-echo $params['id'];
+// echo $params['id'];
