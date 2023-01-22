@@ -22,7 +22,6 @@ require_once __DIR__ . "/../vendor/autoload.php";
 | 
 |
 */
-
 use Neptunia\Application;
 
 $app = new Application(dirname(__DIR__));
@@ -34,9 +33,3 @@ $app->router->post("/contact", function () {
 });
 
 $app->run();
-// memakai configurasi dari class UserDatabase
-// use Neptunia\Config\Database\UserDatabase;
-
-// new UserDatabase();
-// memakai Route dari web.php
-// require_once __DIR__.'/../routes/web.php';

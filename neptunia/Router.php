@@ -5,7 +5,7 @@ namespace Neptunia;
 /**
  * Class Application
  * @author atheo810 <atheos810@gmail.com>
- * @package namespace App;
+ * @package namespace Neptunia;
  *
  */
 class Router
