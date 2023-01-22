@@ -1,11 +1,28 @@
 <?php
 
-// melakukan import dari autoload.php milik composer
-// melakukan import dari folder routes
+/*
+|--------------------------------------------------------------------------
+| Using Vendor autoload.php from composer
+|--------------------------------------------------------------------------
+| including all class stored at composer from here
+| 
+|
+*/
 require_once __DIR__ . "/../vendor/autoload.php";
 
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "../..");
 // $dotenv->load();
+
+/*
+|--------------------------------------------------------------------------
+| Using Application from Neptunia
+|--------------------------------------------------------------------------
+| from Neptunia Application making router, the method currently avaible 
+| are get and post
+| 
+|
+*/
+
 use Neptunia\Application;
 
 $app = new Application(dirname(__DIR__));
