@@ -4,32 +4,46 @@
 			||||-UserDatabase.php
 			||||-Queries/	
 				|||||-Query.php
+
 		|||-UserConfig.php
+
 		|||-Routes/
 			||||-web.php
+
 	||-Http/
 		|||-Controllers/
 			||||-Controller.php
+
 	||-Models/
 		|||-Model.php
+
 	||-Application.php
+
 	||-Request.php
+
 	||-Response.php
+
 	||-Router.php
+	
 |-routes
 	||-web.php
 |-views
 	||-Component/
+
+	||-Layout/
 		|||-footer.php
 		|||-header.php
 		|||-navbar.php
-	||-Layout/
 		|||-template.php
+
 	||-Page/
 		|||-home.php
+		|||-404.php
+
 |-public
 	||-index.php
 	||-.htaccess
+
 |-src
 |vendor
 |.env
