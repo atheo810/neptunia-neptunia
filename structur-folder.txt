@@ -12,19 +12,24 @@
 			||||-Controller.php
 	||-Models/
 		|||-Model.php
+	||-Application.php
+	||-Request.php
+	||-Response.php
+	||-Router.php
 |-routes
 	||-web.php
 |-views
+	||-Component/
+		|||-footer.php
+		|||-header.php
+		|||-navbar.php
 	||-Layout/
 		|||-template.php
 	||-Page/
 		|||-home.php
-	||-Component/
-		|||-card.php
 |-public
 	||-index.php
 	||-.htaccess
-|-index.php
 |-src
 |vendor
 |.env
