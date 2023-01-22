@@ -33,6 +33,14 @@ class Application
 		$this->response = new Response();
 		$this->router = new Router($this->request, $this->response);
 	}
+	/*
+	|-----------------------------------------------------------------------------
+	| making new instance for Response, Request, Router
+	|-----------------------------------------------------------------------------
+	| self::$ROOT_DIR = $rootPath; mean we using dirname as roort for this class
+	| self::$app = $this; including $this to the $app that's belong to Application
+	|
+	*/
 
 	public function run()
 	{
