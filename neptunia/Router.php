@@ -35,7 +35,7 @@ class Router
 
 		if ($callback === false) {
 			$this->response->setStatusCode(404);
-			return $this->renderContent("Not Found");
+			return $this->renderView("404");
 		}
 		if (is_string($callback)) {
 			return $this->renderView($callback);
@@ -44,6 +44,9 @@ class Router
 	}
 	public function renderView($view)
 	{
+		if ($view === "404") {
+			return $this->renderOnlyView($view);
+		}
 		$layoutContent = $this->layoutContent();
 		$viewContent = $this->renderOnlyView($view);
 		return str_replace("{{content}}", $viewContent, $layoutContent);
