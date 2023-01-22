@@ -12,7 +12,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "../..");
 // $dotenv->load();
-
+use Neptunia\Application;
 /*
 |--------------------------------------------------------------------------
 | Using Application from Neptunia
@@ -22,7 +22,6 @@ require_once __DIR__ . "/../vendor/autoload.php";
 | 
 |
 */
-use Neptunia\Application;
 
 $app = new Application(dirname(__DIR__));
 /*

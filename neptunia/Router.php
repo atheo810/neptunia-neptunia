@@ -13,20 +13,60 @@ class Router
 	public Response $response;
 	public Request $request;
 	protected array $routes = [];
+	/*
+	|--------------------------------------------------------------------------
+	| making instance for Response, Request, and protected array []
+	|--------------------------------------------------------------------------
+	| protected array will store the data of routing in our project
+	| 
+	|
+	*/
+
 	public function __construct(Request $request, Response $response)
 	{
 		$this->request = $request;
 		$this->response = $response;
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| construct of Router
+	|--------------------------------------------------------------------------
+	| need the class of Request and Response
+	| and declare of that class in $this
+	| 
+	|
+	*/
 
 	public function get($path, $callback)
 	{
 		$this->routes["get"][$path] = $callback;
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| function get
+	|--------------------------------------------------------------------------
+	| need variable of our paths name in this case is our URI, and 
+	| callback which is the something that we want to show to the user's
+	| and store the data to $routes[];
+	| 
+	|
+	*/
+
 	public function post($path, $callback)
 	{
 		$this->routes["post"][$path] = $callback;
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| function post
+	|--------------------------------------------------------------------------
+	| need variable of our paths name in this case is our URI, and 
+	| callback which is the something that we want to show to the user's
+	| and store the data to $routes[];
+	| 
+	|
+	*/
+
 	public function resolve()
 	{
 		$path = $this->request->getPath();
