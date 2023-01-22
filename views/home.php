@@ -1,5 +1,1 @@
-<?php
-
-// echo "inidia";
-
-// echo $params['id'];
+<h1>Selamat Datang di Home</h1>
