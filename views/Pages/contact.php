@@ -8,7 +8,7 @@
     <label>Email</label>
     <input type="text" name="email" class="form-control">
   </div>
-    <div class="mb-3">
+  <div class="mb-3">
     <label>Body</label>
     <textarea name="body" class="form-control"></textarea>
   </div>

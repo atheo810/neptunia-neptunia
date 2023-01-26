@@ -2,6 +2,7 @@
 
 namespace Neptunia\Controllers;
 
+use Neptunia\Application;
 use Neptunia\Controller;
 
 
@@ -28,10 +29,11 @@ class SiteController extends Controller
 	}
 	public function handlercontact()
 	{
-		// echo "<pre>";
-		// var_dump($_POST);
-		// echo "<pre>";
-		// exit;
+		$body = Application::$app->request->getBody();
+		echo "<pre>";
+		var_dump($body);
+		echo "<pre>";
+		exit;
 		return "value tersubmit";
 	}
 }
