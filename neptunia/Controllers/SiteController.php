@@ -20,7 +20,7 @@ class SiteController extends Controller
 		$params = [
 			'name' => 'Atheo'
 		];
-		return \Neptunia\Application::$app->router->renderView("home", $params);
+		return $this->render("home", $params);
 	}
 	public function contact()
 	{

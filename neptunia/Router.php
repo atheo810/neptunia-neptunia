@@ -78,12 +78,39 @@ class Router
 			$this->response->setStatusCode(404);
 			return $this->renderView("404");
 		}
+		/*
+		|--------------------------------------------------------------------------
+		| check the callback from URI user with URI variable from public
+		|--------------------------------------------------------------------------
+		| if the $callback is false then it will return status code 404 on the 
+		| website
+		| and return the page of 404 
+		| 
+		|
+		*/
 		if (is_string($callback)) {
 			return $this->renderView($callback);
 		}
+		/*
+		|--------------------------------------------------------------------------
+		| check if the callback is string 
+		|--------------------------------------------------------------------------
+		| if the $callback is string then it will return the view of $callback
+		| 
+		|
+		*/
 		if (is_array($callback)) {
-			$callback[0] = new $callback[0];
+			$callback[0] = new $callback[0]();
 		}
+		/*
+		|--------------------------------------------------------------------------
+		| check if the $callback is array 
+		|--------------------------------------------------------------------------
+		| if $callback is an array then it will make an instance of the $callback
+		| from $callback[0]
+		| 
+		|
+		*/
 		return call_user_func($callback);
 	}
 	public function renderView($view, $params = [])
@@ -91,6 +118,14 @@ class Router
 		if ($view === "404") {
 			return $this->renderOnlyView($view, $params);
 		}
+		/*
+		|--------------------------------------------------------------------------
+		| check if the $view is 404
+		|--------------------------------------------------------------------------
+		| if the view is 404 it will return the page of 404
+		| 
+		|
+		*/
 		$layoutContent = $this->layoutContent();
 		$viewContent = $this->renderOnlyView($view, $params);
 		return str_replace("{{content}}", $viewContent, $layoutContent);
@@ -100,12 +135,30 @@ class Router
 		$layoutContent = $this->layoutContent();
 		return str_replace("{{content}}", $viewContent, $layoutContent);
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| make function renderContent
+	|--------------------------------------------------------------------------
+	| make variable $layout content to run function layoutcontent();
+	| and return replacing of {{ content }} from views/pages from the layout
+	| 
+	|
+	*/
 	protected function layoutContent()
 	{
 		ob_start();
 		include_once Application::$ROOT_DIR . "/views/Layout/template.php";
 		return ob_get_clean();
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| make function layoutcontent
+	|--------------------------------------------------------------------------
+	| make an object start at and include the template from views/Layout
+	| and return object clean
+	| 
+	|
+	*/
 	protected function renderOnlyView($view, $params)
 	{
 		foreach ($params as $key => $value) {
