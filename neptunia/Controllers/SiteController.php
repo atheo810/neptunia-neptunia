@@ -26,4 +26,10 @@ class SiteController extends Controller
 	{
 		return \Neptunia\Application::$app->router->renderView("contact");
 	}
+	public function handlercontact()
+	{
+		// echo "<pre>";
+		// var_dump($_POST);
+		// echo "<pre>";
+	}
 }
