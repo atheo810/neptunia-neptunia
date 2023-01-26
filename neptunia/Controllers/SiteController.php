@@ -2,6 +2,10 @@
 
 namespace Neptunia\Controllers;
 
+use Neptunia\Controller;
+
+
+
 /**
  * Class Application
  * @author atheo810 <atheos810@gmail.com>
@@ -9,7 +13,7 @@ namespace Neptunia\Controllers;
  *
  */
 
-class Controller
+class SiteController extends Controller
 {
 	public function home()
 	{

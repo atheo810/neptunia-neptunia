@@ -12,7 +12,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "../..");
 // $dotenv->load();
-use Neptunia\Controllers\Controller;
+use Neptunia\Controllers\SiteController;
 use Neptunia\Application;
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +35,9 @@ $app = new Application(dirname(__DIR__));
 |
 */
 
-$app->router->get("/", [Controller::class, "home"]);
-$app->router->get("/contact", [Controller::class, "contact"]);
-$app->router->post("/contact", [Controller::class, "contact"]);
+$app->router->get("/", [SiteController::class, "home"]);
+$app->router->get("/contact", [SiteController::class, "contact"]);
+$app->router->post("/contact", [SiteController::class, "contact"]);
 /*
 |--------------------------------------------------------------------------
 | Making router 
