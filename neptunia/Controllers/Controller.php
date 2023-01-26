@@ -1,4 +1,5 @@
 <?php
+
 namespace Neptunia\Controllers;
 
 /**
@@ -10,6 +11,13 @@ namespace Neptunia\Controllers;
 
 class Controller
 {
+	public function home()
+	{
+		$params = [
+			'name' => 'Atheo'
+		];
+		return \Neptunia\Application::$app->router->renderView("home", $params);
+	}
 	public function contact()
 	{
 		return \Neptunia\Application::$app->router->renderView("contact");

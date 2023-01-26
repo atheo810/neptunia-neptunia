@@ -35,7 +35,7 @@ $app = new Application(dirname(__DIR__));
 |
 */
 
-$app->router->get("/", "home");
+$app->router->get("/", [Controller::class, "home"]);
 $app->router->get("/contact", [Controller::class, "contact"]);
 $app->router->post("/contact", [Controller::class, "contact"]);
 /*
