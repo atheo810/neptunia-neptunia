@@ -28,8 +28,10 @@ class SiteController extends Controller
 	}
 	public function handlercontact()
 	{
-		// echo "<pre>";
-		// var_dump($_POST);
-		// echo "<pre>";
+		echo "<pre>";
+		var_dump($_POST);
+		echo "<pre>";
+		exit;
+		return "value tersubmit";
 	}
 }
