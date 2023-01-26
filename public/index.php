@@ -14,6 +14,8 @@ require_once __DIR__ . "/../vendor/autoload.php";
 // $dotenv->load();
 use Neptunia\Controllers\SiteController;
 use Neptunia\Application;
+use Neptunia\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | Using Application and Controller from Neptunia
@@ -38,6 +40,10 @@ $app = new Application(dirname(__DIR__));
 $app->router->get("/", [SiteController::class, "home"]);
 $app->router->get("/contact", [SiteController::class, "contact"]);
 $app->router->post("/contact", [SiteController::class, "handlercontact"]);
+$app->router->get("/login", [AuthController::class, 'login']);
+$app->router->post("/login", [AuthController::class, 'login']);
+$app->router->get("/register", [AuthController::class, 'register']);
+$app->router->post("/register", [AuthController::class, 'register']);
 /*
 |--------------------------------------------------------------------------
 | Making router 
