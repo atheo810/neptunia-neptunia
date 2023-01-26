@@ -67,6 +67,7 @@ class Router
 	|
 	*/
 
+
 	public function resolve()
 	{
 		$path = $this->request->getPath();
