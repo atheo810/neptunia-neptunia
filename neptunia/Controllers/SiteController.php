@@ -4,8 +4,7 @@ namespace Neptunia\Controllers;
 
 use Neptunia\Application;
 use Neptunia\Controller;
-
-
+use Neptunia\Request;
 
 /**
  * Class Application
@@ -27,9 +26,9 @@ class SiteController extends Controller
 	{
 		return \Neptunia\Application::$app->router->renderView("contact");
 	}
-	public function handlercontact()
+	public function handlercontact(Request $request)
 	{
-		$body = Application::$app->request->getBody();
+		$body = $request->getBody();
 		echo "<pre>";
 		var_dump($body);
 		echo "<pre>";
