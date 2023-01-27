@@ -1,4 +1,5 @@
 <?php
+
 namespace Neptunia;
 
 /**
@@ -13,6 +14,7 @@ class Application
 	public static string $ROOT_DIR;
 	public static Application $app;
 	public Router $router;
+	public Controller $controller;
 	public Response $response;
 	public Request $request;
 	/*
