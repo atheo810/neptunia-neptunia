@@ -2,6 +2,13 @@
 
 namespace Neptunia\Controllers;
 
+/**
+ * Class AuthController
+ * @author atheo810 <atheos810@gmail.com>
+ * @package namespace Neptunia\Controllers;
+ *
+ */
+
 use Neptunia\Controller;
 use Neptunia\Request;
 

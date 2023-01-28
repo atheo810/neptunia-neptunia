@@ -13,8 +13,8 @@ require_once __DIR__ . "/../vendor/autoload.php";
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "../..");
 // $dotenv->load();
 use Neptunia\Controllers\SiteController;
-use Neptunia\Application;
 use Neptunia\Controllers\AuthController;
+use Neptunia\Application;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +44,9 @@ $app->router->get("/login", [AuthController::class, 'login']);
 $app->router->post("/login", [AuthController::class, 'login']);
 $app->router->get("/register", [AuthController::class, 'register']);
 $app->router->post("/register", [AuthController::class, 'register']);
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Making router 

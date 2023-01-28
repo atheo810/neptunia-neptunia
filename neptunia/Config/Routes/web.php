@@ -1,12 +1,12 @@
 <?php
 
-namespace Neptunia\Config\Routes;
+// namespace Neptunia\Config\Routes;
 
-use Nawasena\Config\Routes\routing;
+// use Nawasena\Config\Routes\routing;
 
-/**
- *
- */
-class web extends routing
-{
-}
+// /**
+//  *
+//  */
+// class web extends routing
+// {
+// }

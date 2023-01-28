@@ -3,7 +3,7 @@
 namespace Neptunia;
 
 /**
- * Class Application
+ * Class Request
  * @author atheo810 <atheos810@gmail.com>
  * @package namespace Neptunia;
  *
@@ -47,10 +47,26 @@ class Request
 	{
 		return $this->method() === 'get';
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| isGet
+	|--------------------------------------------------------------------------
+	| returning the values if the method() equals to get
+	| 
+	|
+	*/
 	public function isPost()
 	{
 		return $this->method() === 'post';
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| isPost
+	|--------------------------------------------------------------------------
+	| returning the values if the method() equals to post
+	| 
+	|
+	*/
 	public function getBody()
 	{
 		$body = [];
@@ -67,4 +83,14 @@ class Request
 
 		return $body;
 	}
+	/*
+	|--------------------------------------------------------------------------
+	| getBody
+	|--------------------------------------------------------------------------
+	| make store arrays in variable $body
+	| check if methoc() equals to get, and loop foreach values and filter 
+	| sanitize, the same things goes on for post
+	| 
+	|
+	*/
 }

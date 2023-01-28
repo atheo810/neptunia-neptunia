@@ -3,13 +3,14 @@
 namespace Neptunia;
 
 /**
- * Class Application
+ * Class Router
  * @author atheo810 <atheos810@gmail.com>
  * @package namespace Neptunia;
  *
  */
 class Router
 {
+
 	public Response $response;
 	public Request $request;
 	protected array $routes = [];
@@ -100,7 +101,8 @@ class Router
 		|
 		*/
 		if (is_array($callback)) {
-			$callback[0] = new $callback[0]();
+			Application::$app->controller = new $callback[0]();
+			$callback[0] = Application::$app->controller;
 		}
 		/*
 		|--------------------------------------------------------------------------
@@ -146,8 +148,9 @@ class Router
 	*/
 	protected function layoutContent()
 	{
+		$layout = Application::$app->controller->layout;
 		ob_start();
-		include_once Application::$ROOT_DIR . "/views/Layout/template.php";
+		include_once Application::$ROOT_DIR . "/views/Layout/$layout.php";
 		return ob_get_clean();
 	}
 	/*

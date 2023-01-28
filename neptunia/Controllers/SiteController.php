@@ -7,7 +7,7 @@ use Neptunia\Controller;
 use Neptunia\Request;
 
 /**
- * Class Application
+ * Class SiteController
  * @author atheo810 <atheos810@gmail.com>
  * @package namespace Neptunia\Controllers;
  *
@@ -29,10 +29,6 @@ class SiteController extends Controller
 	public function handlercontact(Request $request)
 	{
 		$body = $request->getBody();
-		echo "<pre>";
-		var_dump($body);
-		echo "<pre>";
-		exit;
-		return "value tersubmit";
+		return print_r($body);
 	}
 }

@@ -2,11 +2,18 @@
 
 namespace Neptunia;
 
+/**
+ * Class Controller
+ * @author atheo810 <atheos810@gmail.com>
+ * @package namespace Neptunia;
+ *
+ */
 class Controller
 {
-    public string $layout = 'main';
+    public string $layout = 'template';
     public function setLayout($layout)
     {
+        $this->layout = $layout;
     }
 
     public function render($view, $params = [])
