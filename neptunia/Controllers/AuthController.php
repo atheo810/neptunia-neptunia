@@ -10,6 +10,7 @@ namespace Neptunia\Controllers;
  */
 
 use Neptunia\Controller;
+use Neptunia\Models\RegisterModels;
 use Neptunia\Request;
 
 class AuthController extends Controller
@@ -21,7 +22,9 @@ class AuthController extends Controller
     }
     public function register(Request $request)
     {
+        $registerModel = new RegisterModels();
         if ($request->isPost()) {
+
             return "handle submit data";
         }
         $this->setLayout('auth');
