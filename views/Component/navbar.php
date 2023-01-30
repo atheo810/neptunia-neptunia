@@ -15,7 +15,7 @@
                 </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div class=""></div>
+                <div class="a"></div>
             </div>
         </div>
 </nav>
